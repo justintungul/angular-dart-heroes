@@ -1,0 +1,16 @@
+<div id="search-component">
+  <h4>Hero Search</h4>
+  <input #searchBox id="search-box"
+         (change)="search(searchBox.value)"
+         (keyup)="search(searchBox.value)" />
+  <div>
+    <!-- 
+        *ngFor can’t do anything with a Stream until you route it through the async pipe.
+        The async pipe subscribes to the Stream and produces the list of heroes to *ngFor.
+     -->
+    <div *ngFor="let hero of heroes | async"
+         (click)="gotoDetail(hero)" class="search-result" >
+      {{hero.name}}
+    </div>
+  </div>
+</div>

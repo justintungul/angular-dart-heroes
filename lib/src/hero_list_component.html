@@ -5,13 +5,6 @@
   <button (click)="gotoDetail()">View Details</button>
 </div>
 
-<div>
-  <label>Hero name:</label> <input #heroName />
-  <button (click)="add(heroName.value); heroName.value=''">
-    Add
-  </button>
-</div>
-
 <h2>Heroes</h2>
 <ul class="heroes">
   <li *ngFor="let hero of heroes" [class.selected]="hero === selected" (click)="onSelect(hero)">
@@ -20,3 +13,10 @@
     <button class="delete" (click)="delete(hero); $event.stopPropagation()">x</button>
   </li>
 </ul>
+
+<div>
+  <label>Hero name:</label> <input #heroName />
+  <button (click)="add(heroName.value); heroName.value=''">
+    Add
+  </button>
+</div>
