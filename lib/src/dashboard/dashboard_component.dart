@@ -1,11 +1,11 @@
 import 'package:angular/angular.dart';
 import 'package:angular_router/angular_router.dart';
 
-import 'hero.dart';
-import 'hero_service.dart';
-import 'route_paths.dart';
+import '../service/hero.dart';
+import '../service/hero_service.dart';
+import '../route_paths.dart';
 
-import 'hero_search_component.dart';
+import '../hero_search/hero_search_component.dart';
 
 @Component(
   selector: 'my-dashboard',

@@ -2,10 +2,10 @@ import 'package:angular/angular.dart';
 import 'package:angular_forms/angular_forms.dart';
 import 'package:angular_router/angular_router.dart';
 
-import 'hero_service.dart';
-import 'route_paths.dart';
+import '../service/hero_service.dart';
+import '../route_paths.dart';
 
-import 'hero.dart';
+import '../service/hero.dart';
 
 @Component(
   selector: 'my-hero',

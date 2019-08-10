@@ -2,9 +2,9 @@ import 'package:angular_router/angular_router.dart';
 
 import 'route_paths.dart';
 
-import 'hero_list_component.template.dart' as hero_list_template;
-import 'dashboard_component.template.dart' as dashboard_template;
-import 'hero_component.template.dart' as hero_template;
+import 'hero_list/hero_list_component.template.dart' as hero_list_template;
+import 'dashboard/dashboard_component.template.dart' as dashboard_template;
+import 'hero/hero_component.template.dart' as hero_template;
 
 class Routes {
   static final heroes = RouteDefinition(

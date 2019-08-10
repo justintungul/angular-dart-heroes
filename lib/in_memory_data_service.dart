@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'dart:math';
 import 'package:http/http.dart';
 import 'package:http/testing.dart';
-import 'src/hero.dart';
+import 'src/service/hero.dart';
 
 class InMemoryDataService extends MockClient {
   static final _initialHeroes = [
