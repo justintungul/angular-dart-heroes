@@ -7,16 +7,7 @@ import 'src/route_paths.dart';
 
 @Component(
   selector: 'my-app',
-  template: '''
-    <h1>{{title}}</h1>
-    <nav>
-      <a [routerLink]="RoutePaths.dashboard.toUrl()"
-        [routerLinkActive]="'active'">Dashboard</a>
-      <a [routerLink]="RoutePaths.heroes.toUrl()"
-        [routerLinkActive]="'active'">Heroes</a>
-    </nav>
-    <router-outlet [routes]="Routes.all"></router-outlet>
-  ''',
+  templateUrl: 'app_component.html',
   styleUrls: ['app_component.css'],
   directives: [routerDirectives],
   providers: [ClassProvider(HeroService)],

@@ -14,7 +14,6 @@ import 'route_paths.dart';
   directives: [coreDirectives],
   pipes: [commonPipes],
 )
-
 class HeroListComponent implements OnInit {
   final HeroService _heroService;
   final Router _router;
